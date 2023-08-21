@@ -36,7 +36,7 @@ public class UserController {
     }
 
     @GetMapping({"/forUser"})
-    @PreAuthorize("hasRole('Admin')")
+    @PreAuthorize("hasRole('User')")
     public String forUser(){
         return "This URL is only accessible to the user";
     }
